@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Progressive Web App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="manifest" href="/manifest.json">
+   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Weather PWA">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
+
+</head>
+<body>
+
+<div class="container">
+  <h2>Java Script Crime App!! by Mohsin</h2>
+  <form>
+    <div class="form-group">
+      <label for="email">Crime Categories:</label>
+      <select class="form-control" id="ddlcategories">
+      	
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Forces:</label>
+      <select class="form-control" id="ddlforce">
+      	
+      </select>
+
+    </div>
+   
+    <button type="button" onClick="FetchCrimeReportData()" class="btn btn-default">Submit</button>
+  </form>
+
+
+<br/><br/>
+
+ <div id="div_Error"></div>
+
+
+  <div class="row">
+
+  	<div class="col-md-12">
+
+<table class="table table-bordered table-striped" id="tblcrime">
+        <thead>
+            <tr class="th">
+
+              
+                <th>#</th>
+                <th>ID</th>
+                <th>Category</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody id="tbodydata">
+        </tbody>
+    </table>
+
+
+
+
+  	 </div>
+  </div>
+
+
+
+</div>
+
+</body>
+
+<script type="text/javascript" src="app.js"></script>
+</html>
